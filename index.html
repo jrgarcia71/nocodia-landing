@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocodia – Asistente Empresarial de IA</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter y colores de marca -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            --color-primary: #2563eb; /* Blue 600 */
+            --color-primary-dark: #1d4ed8; /* Blue 700 */
+            --color-accent: #10b981; /* Emerald 500 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Light Gray Background */
+        }
+        .text-primary { color: var(--color-primary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .hover-bg-primary-dark:hover { background-color: var(--color-primary-dark); }
+        .text-accent { color: var(--color-accent); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white shadow-xl rounded-2xl my-6">
+
+        <!-- 1. HERO (PRIMERA PANTALLA) -->
+        <section class="text-center py-10 sm:py-16 md:py-20 bg-blue-50/50 rounded-xl shadow-lg mb-12 border border-blue-100">
+            <span class="inline-flex items-center px-3 py-1 text-sm font-semibold rounded-full bg-blue-100 text-primary mb-4">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9.75 17L9.75 13L16.25 13L16.25 17M12 17L12 21M5.75 13L5.75 17M18.25 13L18.25 17M12 10.5V13M12 4V10.5M5.75 4V10.5M18.25 4V10.5"></path>
+                </svg>
+                Asistente Empresarial de IA
+            </span>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+                Nocodia – <span class="text-primary">Cerebro Corporativo Digital</span>
+            </h1>
+            
+            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                Convierte tus manuales, políticas e instructivos en un <strong>cerebro corporativo digital disponible 24/7</strong>.
+            </p>
+
+            <p class="mt-6 text-lg text-gray-500 max-w-4xl mx-auto">
+                Nocodia implementa para tu empresa un Asistente Empresarial de IA que <strong>responde preguntas internas usando solo tus documentos</strong>. Menos interrupciones, menos errores, más productividad.
+            </p>
+
+            <!-- Botones de Acción -->
+            <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="https://wa.me/593963033294?text=Hola,%20me%20interesa%20la%20demo%20del%20Asistente%20Empresarial%20de%20IA%20de%20Nocodia."
+                   target="_blank"
+                   class="bg-primary text-white px-8 py-3 rounded-full font-bold shadow-lg hover-bg-primary-dark transition duration-300">
+                    💬 Escribir por WhatsApp
+                </a>
+                <a href="mailto:jrgarcia@nocodia.net?subject=Información%20Asistente%20Empresarial%20IA&body=Hola,%20quisiera%20más%20información%20sobre%20el%20Asistente%20Empresarial%20de%20IA."
+                   class="bg-white text-primary border border-primary px-8 py-3 rounded-full font-bold shadow-md hover:bg-blue-50 transition duration-300">
+                    📧 Contactar por Email
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. EL PROBLEMA QUE RESUELVE -->
+        <section class="py-12 px-6 bg-white rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-accent pl-3">
+                El problema: <span class="text-red-600">Conocimiento regado</span> y tiempo perdido
+            </h2>
+            <p class="text-gray-700 mb-4">
+                En la mayoría de empresas, la información clave está distribuida entre diferentes fuentes, lo que dificulta el acceso y consume tiempo valioso:
+            </p>
+            <ul class="list-disc ml-6 space-y-2 text-gray-600">
+                <li>Manuales en PDF dispersos.</li>
+                <li>Correos y chats antiguos.</li>
+                <li>Carpetas compartidas desactualizadas.</li>
+                <li>La memoria de “la persona que sabe” (riesgo de conocimiento).</li>
+            </ul>
+            <p class="mt-4 text-lg font-medium text-gray-800 p-4 border border-yellow-200 bg-yellow-50 rounded-lg">
+                Cuando un empleado tiene una duda, debe preguntar, esperar respuesta o buscar. <strong>Una consulta interna puede tomar entre 3 y 8 minutos de un supervisor.</strong> En una empresa de 40 empleados, esto puede generar <strong>300 a 500 consultas internas al mes</strong>.
+            </p>
+        </section>
+
+        <!-- 3. QUÉ ES EL ASISTENTE EMPRESARIAL DE IA -->
+        <section class="py-12 px-6 bg-blue-50 rounded-xl shadow-lg mb-12 border border-blue-100">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-primary pl-3">
+                ¿Qué es el Asistente Empresarial de IA?
+            </h2>
+            <p class="text-gray-700 text-lg">
+                Es un <strong>sistema privado</strong> que responde preguntas de los empleados utilizando <strong>exclusivamente</strong> los documentos internos de la empresa (manuales, políticas, instructivos, catálogos, procesos, reglamentos).
+            </p>
+            <p class="mt-4 text-xl font-semibold text-primary">
+                Funciona como un “cerebro corporativo digital”, disponible 24/7, capaz de buscar y responder en segundos lo que normalmente toma minutos u horas.
+            </p>
+        </section>
+
+        <!-- 4. QUÉ HACE Y QUÉ NO HACE -->
+        <section class="py-12 mb-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Qué hace -->
+                <div class="p-6 bg-white rounded-xl shadow-xl border-t-4 border-accent">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-accent mr-2">✅</span> Qué hace realmente
+                    </h3>
+                    <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                        <li>Busca dentro de los documentos de la empresa para dar respuestas precisas.</li>
+                        <li>Resume, explica, aclara y responde dudas internas del personal.</li>
+                        <li>Reduce el tiempo que jefes y supervisores dedican a preguntas repetitivas.</li>
+                        <li>Centraliza el conocimiento en un solo lugar (adiós a la dispersión en PDFs, chats o correos).</li>
+                        <li>Funciona en cualquier dispositivo (celular, laptop, PC), sin necesidad de instalación.</li>
+                    </ul>
+                </div>
+                <!-- Qué no hace -->
+                <div class="p-6 bg-white rounded-xl shadow-xl border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-red-500 mr-2">❌</span> Qué no hace
+                    </h3>
+                    <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                        <li>No inventa información: si no está en los documentos, no responde.</li>
+                        <li>No reemplaza sistemas de nómina, inventario, CRM o ERP.</li>
+                        <li>No procesa imágenes complejas, escaneos borrosos o fotos de documentos.</li>
+                        <li>No accede a documentos externos: solo usa lo que la empresa entrega y aprueba.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TIPOS DE DOCUMENTOS ACEPTADOS -->
+        <section class="py-12 px-6 bg-gray-50 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 border-l-4 border-primary pl-3">
+                Tipos de documentos que acepta
+            </h2>
+            <p class="text-gray-700 mb-6">
+                Para garantizar la máxima calidad de respuesta y precisión, el Asistente Empresarial de IA trabaja únicamente con documentos 100% legibles y digitales:
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Permitidos -->
+                <div class="p-4 bg-white rounded-lg shadow border border-green-200">
+                    <h4 class="text-xl font-bold text-accent mb-3">Documentos Permitidos:</h4>
+                    <ul class="list-none space-y-2 text-gray-600">
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> PDF digital (creado desde Word, Google Docs o exportado)</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> DOCX</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> TXT</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> HTML</li>
+                    </ul>
+                </div>
+                <!-- No Permitidos -->
+                <div class="p-4 bg-white rounded-lg shadow border border-red-200">
+                    <h4 class="text-xl font-bold text-red-500 mb-3">Documentos No Permitidos:</h4>
+                    <ul class="list-none space-y-2 text-gray-600">
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✗</span> PDF escaneado o fotografiado</li>
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✗</span> Imágenes con texto o capturas de pantalla de manuales</li>
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✗</span> Archivos con tablas muy complejas o gráficos no interpretables</li>
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✗</span> PDFs que mezclan foto + texto superpuesto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 6. DIFERENCIA ENTRE PDF DIGITAL Y PDF ESCANEADO -->
+        <section class="py-12 mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 border-l-4 border-primary pl-3 text-center md:text-left">
+                ¿Por qué insistimos en PDF digital?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- PDF digital -->
+                <div class="p-6 bg-green-50 rounded-xl shadow-md border border-green-300">
+                    <h3 class="text-xl font-bold text-green-700 mb-3">PDF Digital</h3>
+                    <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                        <li>Contiene texto real.</li>
+                        <li>Es <strong>100 % legible</strong> para el asistente.</li>
+                        <li>Permite búsquedas exactas por contenido.</li>
+                        <li>Genera respuestas precisas y confiables.</li>
+                    </ul>
+                </div>
+                <!-- PDF escaneado -->
+                <div class="p-6 bg-red-50 rounded-xl shadow-md border border-red-300">
+                    <h3 class="text-xl font-bold text-red-700 mb-3">PDF Escaneado (Foto)</h3>
+                    <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                        <li>Es solo una foto guardada como PDF.</li>
+                        <li><strong>No contiene texto</strong> que la IA pueda leer directamente.</li>
+                        <li>Requiere un proceso adicional de OCR (reconocimiento de texto) no incluido.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CÓMO PREPARAR LOS DOCUMENTOS -->
+        <section class="py-12 px-6 bg-white rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-accent pl-3">
+                Cómo preparar los documentos (Curación)
+            </h2>
+            <p class="text-gray-700 mb-8">
+                Para que el Asistente Empresarial de IA funcione correctamente, la empresa debe entregar documentos <strong>claros, actualizados y bien organizados</strong>.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Cliente -->
+                <div class="p-4 border-l-4 border-primary bg-blue-50 rounded-lg">
+                    <h4 class="text-xl font-bold text-primary mb-3">Lo que el cliente debe hacer:</h4>
+                    <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                        <li>Entregar documentos digitales, claros y actualizados.</li>
+                        <li>Eliminar documentos duplicados o versiones antiguas.</li>
+                        <li>Usar títulos claros (ejemplo: “Política de Vacaciones 2025”).</li>
+                        <li><strong>Separar documentos muy grandes</strong> en varios archivos más pequeños.</li>
+                        <li>Asegurar que cada documento trate un solo tema.</li>
+                    </ul>
+                </div>
+                <!-- Rechazos -->
+                <div class="p-4 border-l-4 border-red-500 bg-red-50 rounded-lg">
+                    <h4 class="text-xl font-bold text-red-600 mb-3">El sistema rechazará automáticamente:</h4>
+                    <ul class="list-disc ml-6 space-y-2 text-gray-700">
+                        <li>PDFs escaneados sin procesamiento OCR.</li>
+                        <li>Fotografías de carpetas, pizarras o manuales.</li>
+                        <li>Documentos con más de 200 páginas sin dividir.</li>
+                        <li>Archivos antiguos mezclados con versiones nuevas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="mt-8 text-center text-lg italic text-gray-600 font-medium p-4 bg-gray-100 rounded-lg">
+                <strong>Recuerda:</strong> Un asistente de IA no adivina. Responde solo lo que está bien escrito y claro en los documentos. Si el archivo es confuso, el resultado será confuso.
+            </p>
+        </section>
+
+        <!-- 8. ORGANIZACIÓN POR ÁREAS -->
+        <section class="py-12 px-6 bg-blue-50 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-primary pl-3">
+                Organización por áreas internas
+            </h2>
+            <p class="text-gray-700 mb-6">
+                Para lograr una precisión aún mayor, es crucial que la empresa indique qué documentos pertenecen a qué área. Ejemplos de áreas:
+            </p>
+            <div class="flex flex-wrap gap-3 mb-6">
+                <span class="px-3 py-1 bg-primary text-white text-sm rounded-full">RRHH</span>
+                <span class="px-3 py-1 bg-primary text-white text-sm rounded-full">Ventas</span>
+                <span class="px-3 py-1 bg-primary text-white text-sm rounded-full">Operaciones</span>
+                <span class="px-3 py-1 bg-primary text-white text-sm rounded-full">Logística</span>
+                <span class="px-3 py-1 bg-primary text-white text-sm rounded-full">Administración</span>
+            </div>
+            <p class="text-lg font-medium text-gray-800">
+                Esta clasificación permite que el Asistente Empresarial de IA:
+            </p>
+            <ul class="list-disc ml-6 mt-3 space-y-2 text-gray-600">
+                <li>Busque más rápido y filtre ruido.</li>
+                <li>Sea más preciso al evitar mezclar temas (por ejemplo, vacaciones con procedimientos de venta).</li>
+                <li>Ahorre costos de procesamiento de IA.</li>
+            </ul>
+        </section>
+
+        <!-- 9. IMPACTO EN PRODUCTIVIDAD Y ROI -->
+        <section class="py-12 px-6 bg-white rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-accent pl-3">
+                Impacto en la productividad y Retorno de Inversión (ROI)
+            </h2>
+            <p class="text-gray-700 mb-4">
+                En Ecuador (2025), el costo real por hora de un empleado (incluyendo cargas sociales) es de aproximadamente <strong>USD 3,81/hora</strong> (USD 610/mes por 160 horas).
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+                    <h4 class="text-xl font-bold text-red-600 mb-2">Problema actual:</h4>
+                    <p class="text-gray-700">
+                        Cada consulta consume <strong>3 a 8 minutos</strong> del tiempo de un supervisor o empleado experimentado.
+                    </p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <h4 class="text-xl font-bold text-accent mb-2">Con Nocodia IA:</h4>
+                    <p class="text-gray-700">
+                        Cada consulta se resuelve en <strong>1–2 segundos</strong>. Los supervisores se liberan de preguntas repetitivas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-blue-100 rounded-lg shadow-inner">
+                <h4 class="text-2xl font-bold text-primary mb-3">Ahorro mensual estimado:</h4>
+                <p class="text-lg text-gray-800">
+                    Tu empresa puede ahorrar entre <strong>10 y 20 horas mensuales</strong> de tiempo laboral.
+                </p>
+                <ul class="list-disc ml-6 mt-3 text-gray-700">
+                    <li>Ahorro de 10 horas/mes: ≈ <strong>USD 38</strong></li>
+                    <li>Ahorro de 20 horas/mes: ≈ <strong>USD 76</strong></li>
+                </ul>
+                <p class="mt-4 font-semibold text-primary">
+                    La inversión se puede recuperar solo con el ahorro de tiempo, sin contar la reducción de errores y reprocesos.
+                </p>
+            </div>
+        </section>
+
+        <!-- 10. PLANES -->
+        <section class="py-12 mb-12" id="planes">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 border-l-4 border-primary pl-3 text-center md:text-left">
+                Planes del Asistente Empresarial de IA
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Plan A – Básico -->
+                <div class="p-6 bg-white rounded-xl shadow-2xl border-t-4 border-gray-400 flex flex-col h-full transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Plan A – Básico</h3>
+                    <p class="text-sm text-gray-500 mb-4">Ideal para startups o áreas pequeñas.</p>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-primary">$49</span>
+                        <span class="text-lg font-medium text-gray-500">/ mes</span>
+                    </div>
+                    <ul class="list-none space-y-3 text-gray-700 flex-grow">
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span> <strong>Hasta 50 documentos</strong> digitales</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span> Branding básico</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span> Portal privado de acceso</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span> Actualización mensual de documentos</li>
+                        <li class="flex items-center"><span class="text-primary mr-2">✓</span> Entrega en 3 días</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4 font-bold">Onboarding: $100</p>
+                </div>
+
+                <!-- Plan B – Intermedio -->
+                <div class="p-6 bg-white rounded-xl shadow-2xl border-t-4 border-accent flex flex-col h-full transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Plan B – Intermedio</h3>
+                    <p class="text-sm text-gray-500 mb-4">Para la mayoría de PYMEs con procesos definidos.</p>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-primary">$79</span>
+                        <span class="text-lg font-medium text-gray-500">/ mes</span>
+                    </div>
+                    <ul class="list-none space-y-3 text-gray-700 flex-grow">
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> <strong>100 a 300 documentos</strong> digitales</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> Branding básico</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> Portal privado independiente</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> Actualización mensual de documentos</li>
+                        <li class="flex items-center"><span class="text-accent mr-2">✓</span> Entrega en 5 días</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4 font-bold">Onboarding: $150</p>
+                </div>
+
+                <!-- Plan B+ – Profesional (DESTACADO) -->
+                <div class="p-8 bg-primary rounded-xl shadow-2xl flex flex-col h-full transform scale-105 border-4 border-yellow-300">
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Plan B+ – Profesional</h3>
+                    <p class="text-sm text-blue-200 mb-4">¡Recomendado! Alto volumen de información.</p>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-yellow-300">$119</span>
+                        <span class="text-lg font-medium text-blue-200">/ mes</span>
+                    </div>
+                    <ul class="list-none space-y-3 text-white flex-grow">
+                        <li class="flex items-center"><span class="text-yellow-300 mr-2">★</span> <strong>300 a 500 documentos</strong> digitales</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-2">★</span> Branding básico</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-2">★</span> Portal privado independiente</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-2">★</span> Actualización mensual</li>
+                        <li class="flex items-center"><span class="text-yellow-300 mr-2">★</span> Entrega en 7 días</li>
+                    </ul>
+                    <p class="text-sm text-blue-200 mt-4 font-bold">Onboarding: $180</p>
+                </div>
+
+                <!-- Plan C – Premium -->
+                <div class="p-6 bg-white rounded-xl shadow-2xl border-t-4 border-blue-500 flex flex-col h-full transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Plan C – Premium</h3>
+                    <p class="text-sm text-gray-500 mb-4">Para grandes organizaciones con extensos manuales.</p>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-primary">$249</span>
+                        <span class="text-lg font-medium text-gray-500">/ mes</span>
+                    </div>
+                    <ul class="list-none space-y-3 text-gray-700 flex-grow">
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> <strong>Hasta 1,000 documentos</strong> digitales</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Branding básico</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Portal privado independiente</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Actualización mensual</li>
+                        <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Entrega en 10 días</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4 font-bold">Onboarding: $250</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. BENEFICIOS ADICIONALES -->
+        <section class="py-12 px-6 bg-gray-50 rounded-xl shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-l-4 border-accent pl-3">
+                Beneficios adicionales clave
+            </h2>
+            <ul class="list-disc ml-6 space-y-3 text-gray-700 text-lg">
+                <li>Menos errores operativos debido a información obsoleta o malentendida.</li>
+                <li>Menos dependencia de “la persona que sabe”, asegurando la continuidad del negocio.</li>
+                <li>Menos interrupciones para el personal clave (jefes y supervisores).</li>
+                <li>Capacitación más rápida y efectiva de nuevos empleados.</li>
+                <li>Acceso inmediato a procesos y políticas desde cualquier lugar.</li>
+            </ul>
+            <p class="mt-8 text-2xl font-extrabold text-center text-primary italic">
+                Tu empresa deja de buscar información y empieza a tomar decisiones.
+            </p>
+        </section>
+
+        <!-- 12. LLAMADO A LA ACCIÓN Y CONTACTO FINAL -->
+        <section id="contacto" class="text-center py-12 px-6 bg-primary rounded-xl shadow-2xl">
+            <h2 class="text-3xl font-extrabold text-white mb-4">
+                ¿Quieres ver cómo funcionaría en tu empresa?
+            </h2>
+            <p class="text-lg text-blue-200 max-w-3xl mx-auto mb-8">
+                Podemos hacer una demostración rápida usando una muestra de tus documentos para que veas el funcionamiento real. La demo dura 10–15 minutos y es online.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="mailto:jrgarcia@nocodia.net?subject=Solicitud%20Demo%20Asistente%20IA%20Nocodia&body=Hola,%20quisiera%20solicitar%20una%20demo%20del%20Asistente%20Empresarial%20de%20IA.%20Mi%20nombre%20es%20[Tu%20Nombre]%20y%20trabajo%20en%20[Tu%20Empresa]."
+                   class="bg-white text-primary px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-200 transition duration-300">
+                    📧 Solicitar demo
+                </a>
+                <a href="https://wa.me/593963033294?text=Hola,%20me%20interesa%20la%20demo%20del%20Asistente%20Empresarial%20de%20IA%20de%20Nocodia."
+                   target="_blank"
+                   class="bg-green-500 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-green-600 transition duration-300">
+                    💬 Escribir por WhatsApp
+                </a>
+            </div>
+
+            <div class="mt-12 text-sm text-blue-200 space-y-1">
+                <p class="font-bold">Nocodia – Soluciones Inteligentes</p>
+                <p>📍 Ecuador</p>
+                <p>📧 jrgarcia@nocodia.net</p>
+                <p>📱 WhatsApp: +593 963 033 294</p>
+                <p>🌐 <a href="http://www.nocodia.net" target="_blank" class="hover:underline">www.nocodia.net</a></p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
